@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.19)  19 MAR 2019 16:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.19)  19 MAR 2019 20:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1143,6 +1143,27 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \rot@float@box=\box54
 \rot@mess@toks=\toks23
 )
+(/usr/share/texlive/texmf-dist/tex/latex/ms/ragged2e.sty
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+\CenteringLeftskip=\skip65
+\RaggedLeftLeftskip=\skip66
+\RaggedRightLeftskip=\skip67
+\CenteringRightskip=\skip68
+\RaggedLeftRightskip=\skip69
+\RaggedRightRightskip=\skip70
+\CenteringParfillskip=\skip71
+\RaggedLeftParfillskip=\skip72
+\RaggedRightParfillskip=\skip73
+\JustifyingParfillskip=\skip74
+\CenteringParindent=\skip75
+\RaggedLeftParindent=\skip76
+\RaggedRightParindent=\skip77
+\JustifyingParindent=\skip78
+)
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
@@ -1638,14 +1659,14 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 \blx@parenlevel@text=\count350
 \blx@parenlevel@foot=\count351
 \blx@sectionciteorder@0=\count352
-\labelnumberwidth=\skip65
-\labelalphawidth=\skip66
-\biblabelsep=\skip67
-\bibitemsep=\skip68
-\bibnamesep=\skip69
-\bibinitsep=\skip70
-\bibparsep=\skip71
-\bibhang=\skip72
+\labelnumberwidth=\skip79
+\labelalphawidth=\skip80
+\biblabelsep=\skip81
+\bibitemsep=\skip82
+\bibnamesep=\skip83
+\bibinitsep=\skip84
+\bibparsep=\skip85
+\bibhang=\skip86
 \blx@bcfin=\read3
 \blx@bcfout=\write5
 \c@mincomprange=\count353
@@ -1725,12 +1746,12 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@savedoriglanguage=\count421
 \c@pageref=\count422
 \c@savedpageref=\count423
-\shorthandwidth=\skip73
-\shortjournalwidth=\skip74
-\shortserieswidth=\skip75
-\shorttitlewidth=\skip76
-\shortauthorwidth=\skip77
-\shorteditorwidth=\skip78
+\shorthandwidth=\skip87
+\shortjournalwidth=\skip88
+\shortserieswidth=\skip89
+\shorttitlewidth=\skip90
+\shortauthorwidth=\skip91
+\shorteditorwidth=\skip92
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -1892,19 +1913,19 @@ Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip79
+\Hy@SectionHShift=\skip93
 )
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 137.
-Package hyperref Info: Option `hypertexnames' set `false' on input line 137.
-Package hyperref Info: Option `colorlinks' set `true' on input line 137.
-Package hyperref Info: Option `unicode' set `true' on input line 137.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 136.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 136.
+Package hyperref Info: Option `colorlinks' set `true' on input line 136.
+Package hyperref Info: Option `unicode' set `true' on input line 136.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2018/02/06 v6.86b Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 137.
+Package hyperref Info: Option `breaklinks' set `true' on input line 136.
 
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
@@ -1924,7 +1945,7 @@ Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip80
+\labelindent=\skip94
 \enit@outerparindent=\dimen297
 \enit@toks=\toks40
 \enit@inbox=\box90
@@ -1936,42 +1957,42 @@ Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 51.
-\cftparskip=\skip81
-\cftbeforetoctitleskip=\skip82
-\cftaftertoctitleskip=\skip83
-\cftbeforepartskip=\skip84
-\cftpartnumwidth=\skip85
-\cftpartindent=\skip86
-\cftbeforechapskip=\skip87
-\cftchapindent=\skip88
-\cftchapnumwidth=\skip89
-\cftbeforesecskip=\skip90
-\cftsecindent=\skip91
-\cftsecnumwidth=\skip92
-\cftbeforesubsecskip=\skip93
-\cftsubsecindent=\skip94
-\cftsubsecnumwidth=\skip95
-\cftbeforesubsubsecskip=\skip96
-\cftsubsubsecindent=\skip97
-\cftsubsubsecnumwidth=\skip98
-\cftbeforeparaskip=\skip99
-\cftparaindent=\skip100
-\cftparanumwidth=\skip101
-\cftbeforesubparaskip=\skip102
-\cftsubparaindent=\skip103
-\cftsubparanumwidth=\skip104
-\cftbeforeloftitleskip=\skip105
-\cftafterloftitleskip=\skip106
-\cftbeforefigskip=\skip107
-\cftfigindent=\skip108
-\cftfignumwidth=\skip109
+\cftparskip=\skip95
+\cftbeforetoctitleskip=\skip96
+\cftaftertoctitleskip=\skip97
+\cftbeforepartskip=\skip98
+\cftpartnumwidth=\skip99
+\cftpartindent=\skip100
+\cftbeforechapskip=\skip101
+\cftchapindent=\skip102
+\cftchapnumwidth=\skip103
+\cftbeforesecskip=\skip104
+\cftsecindent=\skip105
+\cftsecnumwidth=\skip106
+\cftbeforesubsecskip=\skip107
+\cftsubsecindent=\skip108
+\cftsubsecnumwidth=\skip109
+\cftbeforesubsubsecskip=\skip110
+\cftsubsubsecindent=\skip111
+\cftsubsubsecnumwidth=\skip112
+\cftbeforeparaskip=\skip113
+\cftparaindent=\skip114
+\cftparanumwidth=\skip115
+\cftbeforesubparaskip=\skip116
+\cftsubparaindent=\skip117
+\cftsubparanumwidth=\skip118
+\cftbeforeloftitleskip=\skip119
+\cftafterloftitleskip=\skip120
+\cftbeforefigskip=\skip121
+\cftfigindent=\skip122
+\cftfignumwidth=\skip123
 \c@lofdepth=\count447
 \c@lotdepth=\count448
-\cftbeforelottitleskip=\skip110
-\cftafterlottitleskip=\skip111
-\cftbeforetabskip=\skip112
-\cfttabindent=\skip113
-\cfttabnumwidth=\skip114
+\cftbeforelottitleskip=\skip124
+\cftafterlottitleskip=\skip125
+\cftbeforetabskip=\skip126
+\cfttabindent=\skip127
+\cfttabnumwidth=\skip128
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
@@ -1987,8 +2008,8 @@ Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
 \page@free=\dimen300
 \premulticols=\dimen301
 \postmulticols=\dimen302
-\multicolsep=\skip115
-\multicolbaselineskip=\skip116
+\multicolsep=\skip129
+\multicolbaselineskip=\skip130
 \partial@page=\box92
 \last@line=\box93
 \maxbalancingoverflow=\dimen303
@@ -2032,7 +2053,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
-\@mathmargin=\skip117
+\@mathmargin=\skip131
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -2074,17 +2095,17 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \totwidth@=\dimen313
 \lineht@=\dimen314
 \@envbody=\toks43
-\multlinegap=\skip118
-\multlinetaggap=\skip119
+\multlinegap=\skip132
+\multlinetaggap=\skip133
 \mathdisplay@stack=\toks44
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
-\multirow@colwidth=\skip120
+\multirow@colwidth=\skip134
 \multirow@cntb=\count470
-\multirow@dima=\skip121
+\multirow@dima=\skip135
 \bigstrutjot=\dimen315
 )
 Package biblatex Info: Trying to load language 'mongolian'...
@@ -2092,7 +2113,7 @@ Package biblatex Info: ... file 'mongolian.lbx' not found.
 
 
 Package biblatex Warning: Language 'mongolian' not supported.
-(biblatex)                Using fallback language 'english' on input line 190.
+(biblatex)                Using fallback language 'english' on input line 196.
 
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
@@ -2105,24 +2126,24 @@ File: english.lbx 2017/12/19 v3.10 biblatex localization (PK/JW/AB)
 (./Chapters/Chapter2.aux) (./Chapters/Chapter3.aux) (./Appendices/Summary.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 190.
-LaTeX Font Info:    ... okay on input line 190.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 190.
-LaTeX Font Info:    ... okay on input line 190.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 190.
-LaTeX Font Info:    ... okay on input line 190.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 190.
-LaTeX Font Info:    ... okay on input line 190.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 190.
-LaTeX Font Info:    ... okay on input line 190.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 190.
-LaTeX Font Info:    ... okay on input line 190.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 190.
-LaTeX Font Info:    ... okay on input line 190.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 190.
-LaTeX Font Info:    ... okay on input line 190.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 190.
-LaTeX Font Info:    ... okay on input line 190.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 196.
+LaTeX Font Info:    ... okay on input line 196.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 196.
+LaTeX Font Info:    ... okay on input line 196.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 196.
+LaTeX Font Info:    ... okay on input line 196.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 196.
+LaTeX Font Info:    ... okay on input line 196.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 196.
+LaTeX Font Info:    ... okay on input line 196.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 196.
+LaTeX Font Info:    ... okay on input line 196.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 196.
+LaTeX Font Info:    ... okay on input line 196.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 196.
+LaTeX Font Info:    ... okay on input line 196.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 196.
+LaTeX Font Info:    ... okay on input line 196.
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.dfu
@@ -2276,8 +2297,10 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package scrlayer Info: Setting magic \footheight to \baselineskip while
-(scrlayer)             \begin{document} on input line 190.
-ABD: EveryShipout initializing macros
+(scrlayer)             \begin{document} on input line 196.
+ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 196.
+ ABD: EveryShipout initializing macros
 \c@lstlisting=\count477
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -2291,10 +2314,10 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' not found.
 
 No file main.bbl.
-Package biblatex Info: Reference section=0 on input line 190.
-Package biblatex Info: Reference segment=0 on input line 190.
+Package biblatex Info: Reference section=0 on input line 196.
+Package biblatex Info: Reference segment=0 on input line 196.
 \AtBeginShipoutBox=\box120
-Package hyperref Info: Link coloring ON on input line 190.
+Package hyperref Info: Link coloring ON on input line 196.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -2303,9 +2326,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count478
 )
-LaTeX Info: Redefining \ref on input line 190.
-LaTeX Info: Redefining \pageref on input line 190.
-LaTeX Info: Redefining \nameref on input line 190.
+LaTeX Info: Redefining \ref on input line 196.
+LaTeX Info: Redefining \pageref on input line 196.
+LaTeX Info: Redefining \nameref on input line 196.
 
 (./main.out) (./main.out)
 \@outlinefile=\write6
@@ -2319,7 +2342,7 @@ LaTeX Info: Redefining \nameref on input line 190.
 
 (./FrontBackMatter/Titlepage.tex
 \GPT@outputbox=\box121
-<Figures/MUST_logo.png, id=125, 221.82875pt x 406.51875pt>
+<Figures/MUST_logo.png, id=121, 221.82875pt x 406.51875pt>
 File: Figures/MUST_logo.png Graphic file (type png)
 <use Figures/MUST_logo.png>
 Package pdftex.def Info: Figures/MUST_logo.png  used on input line 13.
@@ -2375,19 +2398,19 @@ Overfull \hbox (20.77353pt too wide) in paragraph at lines 22--23
 1: section
 [4
 
-] [5] (./main.lof)
+] (./main.lof)
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
 
 1: section
-[6] (./main.lot)
+[5] (./main.lot)
 \tf@lot=\write9
 \openout9 = `main.lot'.
 
 
 1: section
-[7]
+[6]
 \openout2 = `Chapters/Introduction.aux'.
 
  (./Chapters/Introduction.tex) [1
@@ -2399,67 +2422,140 @@ Overfull \hbox (20.77353pt too wide) in paragraph at lines 22--23
  (./Chapters/Chapter1.tex) [2
 
 
-]
+] [3]
 \openout2 = `Chapters/Chapter2.aux'.
 
 
-(./Chapters/Chapter2.tex) [3
+(./Chapters/Chapter2.tex
+<Figures/ac1.png, id=218, 931.48pt x 315.1775pt>
+File: Figures/ac1.png Graphic file (type png)
+<use Figures/ac1.png>
+Package pdftex.def Info: Figures/ac1.png  used on input line 4.
+(pdftex.def)             Requested size: 465.73886pt x 157.58836pt.
+
+Overfull \hbox (31.86868pt too wide) in paragraph at lines 4--8
+[][]
+ []
 
 
-]
+Underfull \hbox (badness 10000) in paragraph at lines 4--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--8
+
+ []
+
+<Figures/ac2.png, id=219, 933.4875pt x 323.2075pt>
+File: Figures/ac2.png Graphic file (type png)
+<use Figures/ac2.png>
+Package pdftex.def Info: Figures/ac2.png  used on input line 9.
+(pdftex.def)             Requested size: 466.74261pt x 161.60335pt.
+
+Overfull \hbox (31.86981pt too wide) in paragraph at lines 9--12
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--12
+
+ []
+
+[4
+
+
+ <./Figures/ac1.png> <./Figures/ac2.png>]) [5]
 \openout2 = `Chapters/Chapter3.aux'.
 
- (./Chapters/Chapter3.tex) [4
+ (./Chapters/Chapter3.tex
+<Figures/cusecase.png, id=231, 363.3575pt x 380.42125pt>
+File: Figures/cusecase.png Graphic file (type png)
+<use Figures/cusecase.png>
+Package pdftex.def Info: Figures/cusecase.png  used on input line 11.
+(pdftex.def)             Requested size: 181.6783pt x 190.21014pt.
+
+Overfull \hbox (14.27756pt too wide) in paragraph at lines 11--15
+[] 
+ []
+
+<Figures/cactivity.png, id=232, 797.98125pt x 357.335pt>
+File: Figures/cactivity.png Graphic file (type png)
+<use Figures/cactivity.png>
+Package pdftex.def Info: Figures/cactivity.png  used on input line 19.
+(pdftex.def)             Requested size: 398.98964pt x 178.66705pt.
+
+Overfull \hbox (14.24727pt too wide) in paragraph at lines 19--23
+[] 
+ []
+
+[6
 
 
-]
+ <./Figures/cusecase.png> <./Figures/cactivity.png>]) [7]
 1: section
 \openout2 = `Appendices/Summary.aux'.
 
-(./Appendices/Summary.tex) [5
+(./Appendices/Summary.tex) [8
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 258.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 258.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 223.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 223.
  (./main.aux (./FrontBackMatter/Titlepage.aux)
 (./FrontBackMatter/Abstract.aux) (./FrontBackMatter/Acknowledgments.aux)
 (./FrontBackMatter/Abbreviations.aux) (./Chapters/Introduction.aux)
 (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux) (./Chapters/Chapter3.aux)
 (./Appendices/Summary.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 258.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 258.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F43ACBE9EE0FDA474429307B15088A33;5652.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 223.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 223.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 5FD705133F3A1CC837823FCB827EA0F8;4826
+(rerunfilecheck)             After:  2108B3D769DCD96B1F81994D87CB1325;4616.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48936 strings out of 494283
- 1005688 string characters out of 6169691
- 1225103 words of memory out of 5000000
- 51558 multiletter control sequences out of 15000+600000
+ 49042 strings out of 494283
+ 1007866 string characters out of 6169691
+ 1225994 words of memory out of 5000000
+ 51652 multiletter control sequences out of 15000+600000
  547345 words of font info for 55 fonts, out of 8000000 for 9000
  497 hyphenation exceptions out of 8191
- 55i,19n,67p,10377b,1661s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1440.600
-pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1728.60
-0pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1200.6
-00pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labi1200.
-600pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1728
-.600pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/lacc144
-0.600pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/lati12
-00.600pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1
-200.600pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx
-2488.600pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/lar
-m1440.600pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/la
-cc1728.600pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/l
-acc2074.600pk>
-Output written on main.pdf (14 pages, 327471 bytes).
+ 55i,19n,68p,10377b,1661s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{section*.29} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.28} has been referenced but does not exi
+st, replaced by a fixed one
+
+ </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1440.600pk
+> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1728.600p
+k> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1200.600
+pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labi1200.60
+0pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1728.6
+00pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/lacc1440.
+600pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/lati1200
+.600pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm120
+0.600pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx24
+88.600pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1
+440.600pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/lacc
+1728.600pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/lac
+c2074.600pk>
+Output written on main.pdf (16 pages, 390958 bytes).
 PDF statistics:
- 666 PDF objects out of 1000 (max. 8388607)
- 268 compressed objects within 3 object streams
- 45 named destinations out of 1000 (max. 500000)
- 250 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 690 PDF objects out of 1000 (max. 8388607)
+ 270 compressed objects within 3 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 262 words of extra memory for PDF output out of 10000 (max. 10000000)
 
