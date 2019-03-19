@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.19)  19 MAR 2019 13:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.19)  19 MAR 2019 16:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2101,7 +2101,8 @@ File: english.lbx 2017/12/19 v3.10 biblatex localization (PK/JW/AB)
 ) (./main.aux
 (./FrontBackMatter/Titlepage.aux) (./FrontBackMatter/Abstract.aux)
 (./FrontBackMatter/Acknowledgments.aux) (./FrontBackMatter/Abbreviations.aux)
-(./Chapters/Introduction.aux) (./Appendices/Summary.aux))
+(./Chapters/Introduction.aux) (./Chapters/Chapter1.aux)
+(./Chapters/Chapter2.aux) (./Chapters/Chapter3.aux) (./Appendices/Summary.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 190.
@@ -2124,7 +2125,6 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 190.
 LaTeX Font Info:    ... okay on input line 190.
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
-
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.dfu
 File: ts1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
@@ -2319,7 +2319,7 @@ LaTeX Info: Redefining \nameref on input line 190.
 
 (./FrontBackMatter/Titlepage.tex
 \GPT@outputbox=\box121
-<Figures/MUST_logo.png, id=205, 221.82875pt x 406.51875pt>
+<Figures/MUST_logo.png, id=125, 221.82875pt x 406.51875pt>
 File: Figures/MUST_logo.png Graphic file (type png)
 <use Figures/MUST_logo.png>
 Package pdftex.def Info: Figures/MUST_logo.png  used on input line 13.
@@ -2335,8 +2335,13 @@ Package pdftex.def Info: Figures/MUST_logo.png  used on input line 13.
 ])
 \openout2 = `FrontBackMatter/Abstract.aux'.
 
- (./FrontBackMatter/Abstract.tex)
-[1
+ (./FrontBackMatter/Abstract.tex
+Overfull \hbox (20.77353pt too wide) in paragraph at lines 22--23
+\T2A/cmr/m/n/12 ту-хайн шаб-ло-мыг урь-даас ма-най application гар-гаж °г-с°н б
+айх ба м°н application-
+ []
+
+) [1
 
 
 ]
@@ -2362,15 +2367,15 @@ Package pdftex.def Info: Figures/MUST_logo.png  used on input line 13.
 
 
 
-] (./main.toc
-1: section
-[4
-
-])
+] (./main.toc)
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
- [5] (./main.lof)
+
+1: section
+[4
+
+] [5] (./main.lof)
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
@@ -2389,81 +2394,72 @@ Package pdftex.def Info: Figures/MUST_logo.png  used on input line 13.
 
 
 ]
-1: section
-(./Chapters/Chapter1.tex) (./Chapters/Chapter2.tex
-Overfull \hbox (2.46791pt too wide) in paragraph at lines 11--11
-|[]\T2A/cmr/bx/n/14.4 Технологи, прэйм-ворк бо-лон АПИ -ийн ту-хай інд-
- []
+\openout2 = `Chapters/Chapter1.aux'.
 
-) (./Chapters/Chapter3.tex) (./Chapters/Chapter4.tex)
-1: section
-[2
+ (./Chapters/Chapter1.tex) [2
+
 
 ]
-Overfull \vbox (1016.34769pt too high) has occurred while \output is active []
+\openout2 = `Chapters/Chapter2.aux'.
 
 
-[3]
+(./Chapters/Chapter2.tex) [3
+
+
+]
+\openout2 = `Chapters/Chapter3.aux'.
+
+ (./Chapters/Chapter3.tex) [4
+
+
+]
+1: section
 \openout2 = `Appendices/Summary.aux'.
 
- (./Appendices/Summary.tex) [4
+(./Appendices/Summary.tex) [5
+
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 264.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 264.
- (./main.aux (./FrontBackMatter/Titlepage.aux) (./FrontBackMatter/Abstract.aux)
- (./FrontBackMatter/Acknowledgments.aux)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 258.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 258.
+ (./main.aux (./FrontBackMatter/Titlepage.aux)
+(./FrontBackMatter/Abstract.aux) (./FrontBackMatter/Acknowledgments.aux)
 (./FrontBackMatter/Abbreviations.aux) (./Chapters/Introduction.aux)
+(./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux) (./Chapters/Chapter3.aux)
 (./Appendices/Summary.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 264.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 264.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: DA39CDD500D5E57E0229D477A1788341;12488
-(rerunfilecheck)             After:  C53A6EEDFB9CD16E84BD3EEC05E248A1;12508.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 258.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 258.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: F43ACBE9EE0FDA474429307B15088A33;5652.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48970 strings out of 494283
- 1005854 string characters out of 6169691
- 1227418 words of memory out of 5000000
- 51580 multiletter control sequences out of 15000+600000
+ 48936 strings out of 494283
+ 1005688 string characters out of 6169691
+ 1225103 words of memory out of 5000000
+ 51558 multiletter control sequences out of 15000+600000
  547345 words of font info for 55 fonts, out of 8000000 for 9000
  497 hyphenation exceptions out of 8191
- 55i,20n,71p,10377b,2401s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{chapter.47} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.34} has been referenced but does not exist,
- replaced by a fixed one
-
- </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1440.600pk
-> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1728.600p
-k> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1200.600
-pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labi1200.60
-0pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1728.6
-00pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/lacc1440.
-600pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/lati1200
-.600pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm120
-0.600pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx24
-88.600pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1
-440.600pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/lacc
-1728.600pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/lac
-c2074.600pk>
-Output written on main.pdf (13 pages, 349749 bytes).
+ 55i,19n,67p,10377b,1661s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1440.600
+pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1728.60
+0pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1200.6
+00pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labi1200.
+600pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1728
+.600pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/lacc144
+0.600pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/lati12
+00.600pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1
+200.600pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx
+2488.600pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/lar
+m1440.600pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/la
+cc1728.600pk> </home/munkhuu/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/l
+acc2074.600pk>
+Output written on main.pdf (14 pages, 327471 bytes).
 PDF statistics:
- 825 PDF objects out of 1000 (max. 8388607)
- 372 compressed objects within 4 object streams
- 66 named destinations out of 1000 (max. 500000)
- 410 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 666 PDF objects out of 1000 (max. 8388607)
+ 268 compressed objects within 3 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 250 words of extra memory for PDF output out of 10000 (max. 10000000)
 
