@@ -44,8 +44,6 @@ headsepline, % Толгой мөрийн доогуур шугам татахы�
 \usepackage{titlesec}
 \usepackage[table]{xcolor}
 \usepackage{rotating} % эргүүлэх
-\usepackage{enumitem}
-\setlist{noitemsep}
 
 \let\oldtabular\tabular
 \let\endoldtabular\endtabular
@@ -68,42 +66,96 @@ headsepline, % Толгой мөрийн доогуур шугам татахы�
 
 \definecolor{OliveGreen}{cmyk}{0.64,0,0.95,0.40}
 \definecolor{CadetBlue}{cmyk}{0.62,0.57,0.23,0}
-\definecolor{Cover}{RGB}{102,255,255}
-\definecolor{Chapter}{RGB}{255,220,180}
+\definecolor{Cover}{RGB}{255,255,255}
+\definecolor{Chapter}{RGB}{255,255,255}
+% \definecolor{Cover}{RGB}{102,255,255}
+% \definecolor{Chapter}{RGB}{255,220,180}
 
 \definecolor{lightlightgray}{gray}{0.9}
-\usepackage{listings}
+% \usepackage{listings}
+\usepackage{listings,lstautogobble}
 \renewcommand{\lstlistingname}{Эх код} % Програмын эх код хэвлэх
 \lstset{
-language=C,                             % Code langugage
-basicstyle=\linespread{1.0}\ttfamily,                   % Code font
-keywordstyle=\color{OliveGreen},        % Keywords font ('*' = uppercase)
-commentstyle=\color{CadetBlue},         % Comments font
-numbers=left,                           % Line nums position
-numberstyle=\tiny,                      % Line-numbers fonts
-stepnumber=1,                           % Step between two line-numbers
-numbersep=5pt,                          % How far are line-numbers from code
-backgroundcolor=\color{lightlightgray}, % Choose background color
-frame=none,                             % A frame around the code
-tabsize=2,                              % Default tab size
-captionpos=t,                           % Caption-position = bottom
-breaklines=true,                        % Automatic line breaking?
-breakatwhitespace=false,                % Automatic breaks only at whitespace?
-showspaces=false,                       % Dont make spaces visible
-showtabs=false,                         % Dont make tabls visible
-columns=flexible,                       % Column format
-morekeywords={__global__, __device__},  % CUDA specific keywords
+    language=C,                             % Code langugage
+    basicstyle=\linespread{1.0}\ttfamily,                   % Code font
+    keywordstyle=\color{OliveGreen},        % Keywords font ('*' = uppercase)
+    commentstyle=\color{CadetBlue},         % Comments font
+    numbers=left,                           % Line nums position
+    numberstyle=\tiny,                      % Line-numbers fonts
+    stepnumber=1,                           % Step between two line-numbers
+    numbersep=5pt,                          % How far are line-numbers from code
+    backgroundcolor=\color{lightlightgray}, % Choose background color
+    frame=none,                             % A frame around the code
+    tabsize=2,                              % Default tab size
+    captionpos=t,                           % Caption-position = bottom
+    breaklines=true,                        % Automatic line breaking?
+    breakatwhitespace=false,                % Automatic breaks only at whitespace?
+    showspaces=false,                       % Dont make spaces visible
+    showtabs=false,                         % Dont make tabls visible
+    columns=flexible,                       % Column format
+    morekeywords={__global__, __device__},  % CUDA specific keywords
+}
+
+% source code
+\colorlet{punct}{red!60!black}
+\definecolor{background}{HTML}{EEEEEE}
+\definecolor{delim}{RGB}{20,105,176}
+\colorlet{numb}{magenta!60!black}
+\lstdefinelanguage{json}{
+    basicstyle=\normalfont\ttfamily,
+    numbers=left,
+    numberstyle=\scriptsize,
+    stepnumber=1,
+    numbersep=8pt,
+    showstringspaces=false,
+    breaklines=true,
+    frame=lines,
+    autogobble=true,
+    backgroundcolor=\color{background},
+    literate=
+     *{0}{{{\color{numb}0}}}{1}
+      {1}{{{\color{numb}1}}}{1}
+      {2}{{{\color{numb}2}}}{1}
+      {3}{{{\color{numb}3}}}{1}
+      {4}{{{\color{numb}4}}}{1}
+      {5}{{{\color{numb}5}}}{1}
+      {6}{{{\color{numb}6}}}{1}
+      {7}{{{\color{numb}7}}}{1}
+      {8}{{{\color{numb}8}}}{1}
+      {9}{{{\color{numb}9}}}{1}
+      {:}{{{\color{punct}{:}}}}{1}
+      {,}{{{\color{punct}{,}}}}{1}
+      {\{}{{{\color{delim}{\{}}}}{1}
+      {\}}{{{\color{delim}{\}}}}}{1}
+      {[}{{{\color{delim}{[}}}}{1}
+      {]}{{{\color{delim}{]}}}}{1},
 }
 
 \usepackage[autostyle=false]{csquotes} % Ном зүйд хэлнээс хамаарсан хашилт оруулахад хэрэгтэй
 
 \usepackage[backend=bibtex,natbib=true,sorting=none,sortcites]{biblatex} % Ном зүйд bibtex -г ашиглах
 
-\addbibresource{references.bib} % Ном зүйн файл
+\usepackage{float}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{indentfirst}
+\usepackage{enumitem}
+\usepackage{textcase}
+\usepackage{tocloft}
+\usepackage{multicol}
+\usepackage{pdflscape}
+\usepackage{etoolbox}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{setspace}
+
+
 
 \newcommand{\authorshipname}{Зохиогч эрхийн хамгаалал}
 \newcommand{\abbrevname}{Товчилсон үгс}
-\newcommand{\constantsname}{Физик тогтмолууд}
+\newcommand{\constantsname}{Ашигласан томьёонууд}
 \newcommand{\symbolsname}{Таних тэмдэгтүүд}
 \newcommand{\acknowledgementname}{Талархал}
 \newcommand{\abstractname}{Хураангуй}
@@ -112,22 +164,22 @@ morekeywords={__global__, __device__},  % CUDA specific keywords
 %	THESIS INFORMATION
 %-------------------------------------------------------------------------------
 
-\thesistitle{Багшийн журнал вэб системийн хөгжүүлэлт} % Таны ажлын нэр, нүүр болон хураангуй хуудсанд ашигласан. Өөр газарт бол \ttitle командыг хэрэглэнэ
-\thesistype{Бакалаврын төгсөлтийн ажил} % Удирдагчийн нэр, нүүр хуудсанд ашиглана. Дурын газарт бол \thesisname командыг хэрэглэнэ
-\supervisor{Магистр Б.Мөнхбуян} % Удирдагчийн нэр, нүүр хуудсанд ашиглана. Дурын газарт бол \supname командыг хэрэглэнэ
-\reader{Проф. PhD. А.Батмөнх} % Шүүмжлэгчийн нэр, Дурын газарт бол \readname командыг хэрэглэнэ
-\advisor{Доктор (Ph.D) Ц.Ганбат, Магистр Э.Баатархүү} % Зөвлөгчийн нэр, Дурын газарт бол \advicename командыг хэрэглэнэ
-\degreeind{D523910} % Мэргэжлийн индекс, нүүр болон хураангуй хуудсанд ашигласан. Өөр газарт бол \degreeid командыг хэрэглэнэ
+\thesistitle{Шалгалтын шаблом засах} % Таны ажлын нэр, нүүр болон хураангуй хуудсанд ашигласан. Өөр газарт бол \ttitle командыг хэрэглэнэ
+\thesistype{Бакалаврын төслийн ажил} % Удирдагчийн нэр, нүүр хуудсанд ашиглана. Дурын газарт бол \thesisname командыг хэрэглэнэ
+\supervisor{Магистр ыбөыбө.Нэр} % Удирдагчийн нэр, нүүр хуудсанд ашиглана. Дурын газарт бол \supname командыг хэрэглэнэ
+%\reader{Доктор (PhD) Ч.Цэнд-Аюуш} % Шүүмжлэгчийн нэр, Дурын газарт бол \readname командыг хэрэглэнэ
+%\advisor{Магистр Б.Гүндсамбуу, Магистр Г.Цэнд-Аюуш} % Зөвлөгчийн нэр, Дурын газарт бол \advicename командыг хэрэглэнэ
+\degreeind{D480200} % Мэргэжлийн индекс, нүүр болон хураангуй хуудсанд ашигласан. Өөр газарт бол \degreeid командыг хэрэглэнэ
 \degree{Мэдээллийн систем} % Боловсролын зэрэг, нүүр болон хураангуй хуудсанд ашигласан. Өөр газарт бол \degreename командыг хэрэглэнэ
-\authorshort{Г.Болд} % Таны товч нэр, нүүр болон хураангуй хуудсанд ашигласан. Дурын газарт бол \shortname командыг хэрэглэнэ 
-\authorlong{Галсанбаяр Болд} % Таны бүтэн нэр, нүүр болон хураангуй хуудсанд ашигласан. Дурын газарт бол \longname командыг хэрэглэнэ 
-\addresses{ztsbold@gmail.com} % Таны хаяг, одоогоор ашиглаагүй. Өөр газарт бол \addressname командыг хэрэглэнэ
-\subject{Компьютерийн ухаан} % Таны салбар, одоогоор ашиглаагүй. Дурынр газарт бол \subjectname командыг ашиглана
-\keywords{Багш, журнал} % Түлхүүр үгс, одоогоор ашиглаагүй. Дурын газарт бол \keywordnames командыг хэрэглэнэ
+\authorshort{Д.Мөнхтүвшин} % Таны товч нэр, нүүр болон хураангуй хуудсанд ашигласан. Дурын газарт бол \shortname командыг хэрэглэнэ 
+\authorlong{Давхарбаяын Мөнхтүвшин} % Таны бүтэн нэр, нүүр болон хураангуй хуудсанд ашигласан. Дурын газарт бол \longname командыг хэрэглэнэ 
+\addresses{B150920009@mymust.net} % Таны хаяг, одоогоор ашиглаагүй. Өөр газарт бол \addressname командыг хэрэглэнэ
+\subject{Мэдээллийн технологи} % Таны салбар, одоогоор ашиглаагүй. Дурынр газарт бол \subjectname командыг ашиглана
+\keywords{шалгатын дүнг бодох, шаблом} % Түлхүүр үгс, одоогоор ашиглаагүй. Дурын газарт бол \keywordnames командыг хэрэглэнэ
 \university{\href{http://www.must.edu.mn}{Шинжлэх Ухаан Технологийн Их Сургууль}} % Их сургуулийн нэр ба веб хаяг. Дурын газарт бол \univname командыг хэрэглэнэ 
 \department{Мэдээллийн технологийн салбар} % Сургууль/тэнхмийн нэр, нүүр болон хураангуй хуудсанд ашигласан. Дурын газарт бол\deptname командыг хэрэглэнэ
-\deptchair{Доктор (Ph.D) А.Алтангэрэл} % Тэнхим/эрхлэгчийн нэр, нүүр болон хураангуй хуудсанд ашигласан. Дурын газарт бол\chairname командыг хэрэглэнэ
-\group{Робот техникийн баг} % Судалгааны баг/тэнхмийн нэр, нүүр хуудсанд ашигласан. Дурын газарт бол \groupname командыг хэрэглэнэ
+\deptchair{Проф. PhD. А.Эрдэнэбаатар} % Тэнхим/эрхлэгчийн нэр, нүүр болон хураангуй хуудсанд ашигласан. Дурын газарт бол\chairname командыг хэрэглэнэ
+%\group{Робот техникийн баг} % Судалгааны баг/тэнхмийн нэр, нүүр хуудсанд ашигласан. Дурын газарт бол \groupname командыг хэрэглэнэ
 \faculty{\href{http://www.sict.edu.mn}{Мэдээлэл, Холбооны Технологийн Сургууль}} % Салбар сургууль/факультетийн нэр, нүүр болон хураангуй хуудсанд ашигласан. Дурын газарт бол \facname командыг ашиглана
 
 \hypersetup{pdftitle=\ttitle} % Pdf файлын гарчиг
@@ -135,7 +187,6 @@ morekeywords={__global__, __device__},  % CUDA specific keywords
 \hypersetup{pdfkeywords=\keywordnames} % Pdf файлын түлхүүр үгс
 \hypersetup{allcolors=black} % Pdf файлын бүх холбоос хар өнгөтэй
 
-\usepackage{longtable}
 \begin{document}
 
 \frontmatter % Агуулгын өмнөх хуудас дугаарлалт: i, ii, iii, iv... г.м.
@@ -143,22 +194,24 @@ morekeywords={__global__, __device__},  % CUDA specific keywords
 \pagestyle{plain} % Тезисийн загварыг дуудах хүртэлх толгой мөрийн суурь загвар
 
 \include{FrontBackMatter/Titlepage} % Нүүр хуудас
-\include{FrontBackMatter/Plan-Review} % Төлөвлөгөө, гүйцэтгэл, шүүмжийн хуудас
-\include{FrontBackMatter/Declaration} % Мэдэгдлийн хуудас
-\include{FrontBackMatter/Quotation} % Ишлэл хуудас
+%\include{FrontBackMatter/Plan-Review} % Төлөвлөгөө, гүйцэтгэл, шүүмжийн хуудас
+%\include{FrontBackMatter/Declaration} % Мэдэгдлийн хуудас
+% \include{FrontBackMatter/Quotation} % Ишлэл хуудас
 \include{FrontBackMatter/Abstract} % Ажлын хураангуй
 \include{FrontBackMatter/Acknowledgments} % Талархлын хуудас
 \include{FrontBackMatter/Abbreviations} % Товчилсон үгс
-%\include{FrontBackMatter/Constants} % Ашигласан тогтмолууд
-%\include{FrontBackMatter/Symbols} % Ашгласан таних тэмдгүүд
-%\include{FrontBackMatter/Dedication} % Ажлыг хэнд зориулсан
+% \include{FrontBackMatter/Constants} % Ашигласан тогтмолууд
+% \include{FrontBackMatter/Symbols} % Ашгласан таних тэмдгүүд
+% \include{FrontBackMatter/Dedication} % Ажлыг хэнд зориулсан
 
 %-------------------------------------------------------------------------------
 %	LIST OF CONTENTS/FIGURES/TABLES PAGES
 %-------------------------------------------------------------------------------
 
 \tableofcontents % Гарчиг хэвлэх
+\newpage
 \listoffigures % Зургийн жагсаалт хэвлэх
+\newpage
 \listoftables % Хүснэгтийн жагсаалт хэвлэх
 
 %-------------------------------------------------------------------------------
@@ -167,38 +220,45 @@ morekeywords={__global__, __device__},  % CUDA specific keywords
 
 \mainmatter % Хуудасны тоон (1,2,3...) дугаарлалт эхлэнэ
 
+\include{Chapters/Introduction}
 \pagestyle{thesis} % Хуудасны тогойг "thesis" загвар руу буцаах
 \myformat % Бүлгийн нэрийг тусгай хуудсанд хэвлэх
 
 % Тезисийн бүлгүүдийг Chapters хавтаснаас бие даасан файл байдлаар оруулах
+\let\cleardoublepage\clearpage
 
-\include{Chapters/Chapter1}
-\include{Chapters/Chapter2} 
-\include{Chapters/Chapter3}
+\input{Chapters/Chapter1}
+\input{Chapters/Chapter2}
+\input{Chapters/Chapter3}
+\input{Chapters/Chapter4}
+%\include{Chapters/Chapter1}
+%\include{Chapters/Chapter2} 
+%\include{Chapters/Chapter3}
 %\include{Chapters/Chapter4} 
-%\include{Chapters/Chapter5}
+\pagestyle{plain}
+\include{Appendices/Summary}
 
 %-------------------------------------------------------------------------------
 %	THESIS CONTENT - APPENDICES
 %-------------------------------------------------------------------------------
 
-\appendix % Дараах "chapters" нь Хавсралт болохыг LaTex -д хэлэх
+%\appendix % Дараах "chapters" нь Хавсралт болохыг LaTex -д хэлэх
 
 % Тезисийн бүлгүүдийг Appendices хавтаснаас бие даасан файл байдлаар оруулах
 
-\include{Appendices/AppendixA}
-%\include{Appendices/AppendixB}
+%include{Appendices/AppendixB}
 %\include{Appendices/AppendixC}
 
 %-------------------------------------------------------------------------------
+
+
 %	BIBLIOGRAPHY
 %-------------------------------------------------------------------------------
-\defformat % Бүлгийн нэрийг оргиналь байдлаар хэвлэх
+%\defformat % Бүлгийн нэрийг оргиналь байдлаар хэвлэх
 
-\addchaptertocentry{Ном зүй} % Ном зүйг гарчигт нэмэх
-
-\printbibliography[heading=bibliography,title={Ном зүй}]
+%\addchaptertocentry{Ашигласан материал} % Ном зүйг гарчигт нэмэх
+%\printbibliography[heading=bibliography,title={Ашигласан материал}]
 
 %-------------------------------------------------------------------------------
+
 \end{document}
- 
